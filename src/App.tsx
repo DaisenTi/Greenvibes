@@ -23,11 +23,11 @@ import maracuyaproductoBg from './assets/images/modelo maracuya.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de mango expandida)
 import mangoexpandedBg from './assets/images/botella mango 800x600 D.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de mora expandida)
-import moraexpandedBg from './assets/images/botella mora 800x600.jpg.jpeg';
+import moraexpandedBg from './assets/images/botella mora 800x600 B.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de cas expandida)
-import casexpandedBg from './assets/images/botella cas 800x600.jpg.jpeg';
+import casexpandedBg from './assets/images/botella cas 800x600 B.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de maracuya expandida)
-import maracuyaexpandedBg from './assets/images/botella maracuya 800x600.jpg.jpeg';
+import maracuyaexpandedBg from './assets/images/botella maracuya 800x600 B.jpg.jpeg';
 
 // @ts-expect-error - image asset (Imagen Contactanos)
 import contactBg from './assets/images/contactanos 1000x1200.jpg.jpeg';
@@ -514,10 +514,10 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-2xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <Sparkles className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-extrabold tracking-wide text-stone-50 mb-3">
+                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
                   Sin Azúcar Añadida
                 </h4>
-                <p className="text-stone-200 text-xs sm:text-sm font-normal tracking-wide leading-relaxed">
+                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
                   No añadimos endulzantes artificiales ni jarabes de maíz de alta fructosa. El perfil dulce es sutil y proviene 100% de la fruta fresca madura natural.
                 </p>
               </div>
@@ -529,10 +529,10 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <Droplet className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-extrabold tracking-wide text-stone-50 mb-3">
+                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
                   Envases Sustentables
                 </h4>
-                <p className="text-stone-200 text-xs sm:text-sm font-normal tracking-wide leading-relaxed">
+                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
                   Botellas de vidrio premium que aíslan la luz UV directa y tapas ecológicas biodegradables. Promovemos el retorno y reutilización de envases.
                 </p>
               </div>
@@ -544,10 +544,10 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <GlassWater className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-extrabold tracking-wide text-stone-50 mb-3">
+                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
                   Prensado en Frío
                 </h4>
-                <p className="text-stone-200 text-xs sm:text-sm font-normal tracking-wide leading-relaxed">
+                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
                   Tecnología de prensa hidráulica lenta sin generación de calor por fricción eléctrica. Mantiene vitaminas, minerales y enzimas vivas hasta por 5 días.
                 </p>
               </div>
