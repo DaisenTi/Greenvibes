@@ -5,10 +5,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-// @ts-expect-error - image asset
+// @ts-expect-error - image asset (Imagen de inicio)
 import heroBg from './assets/images/inicio sin boton verde.jpg';
-// @ts-expect-error - image asset
+// @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
+// @ts-expect-error - image asset (Imagen de menu productos)
+import inicioproductosBg from './assets/images/jugos_intro_redimen.png';
 import { 
   Leaf, 
   Sparkles, 
@@ -369,7 +371,7 @@ export default function App() {
             {/* Visual background image of product line - clean and fully bright */}
             <div className="absolute inset-0">
               <img 
-                src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&q=80&w=1500" 
+                src={inicioproductosBg} 
                 alt="Retrato artístico de la gama botánica Green Vibes sobre base neutra y elegante" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-101"
               />
