@@ -258,7 +258,7 @@ export default function App() {
         </div>
 
         {/* Bottom Ambient Wave */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-stone-50 to-transparent z-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-stone-50 to-transparent z-10 pointer-events-none" />
       </section>
 
       {/* 3. SECCIÓN QUIÉNES SOMOS */}
@@ -320,14 +320,14 @@ export default function App() {
             <div className="lg:col-span-6 order-1 lg:order-2">
               <div className="relative group">
                 {/* Decorative background cards */}
-                <div className="absolute -inset-2 bg-gradient-to-tr from-forest-200 via-forest-100 to-lime-accent rounded-3xl opacity-20 blur-lg group-hover:opacity-30 transition-opacity duration-500" />
+                <div className="absolute -inset-2 bg-linear-to-tr from-forest-200 via-forest-100 to-lime-accent rounded-3xl opacity-20 blur-lg group-hover:opacity-30 transition-opacity duration-500" />
                 
                 {/* Main Image Frame - Premium polish matching style */}
                 <div className="relative bg-white p-3 rounded-2xl border border-forest-100 shadow-md overflow-hidden">
                   <img 
                     src={quienessomosBg} 
                     alt="Hierbas frescas y frutas seleccionadas que forman la base orgánica de nuestros jugos naturales" 
-                    className="w-full h-[400px] sm:h-[480px] object-cover rounded-xl transition-all duration-700 group-hover:scale-102"
+                    className="w-full h-100 sm:h-120 object-cover rounded-xl transition-all duration-700 group-hover:scale-102"
                   />
                   
                   {/* Decorative badge with company core metric */}
@@ -365,7 +365,7 @@ export default function App() {
           </div>
 
           {/* BANNER DESTACADO (INTRODUCCIÓN VISUAL DE GAMA) */}
-          <div className="mb-16 relative rounded-3xl overflow-hidden shadow-xl border border-forest-100 h-64 sm:h-[350px] md:h-[450px] bg-stone-100 group">
+          <div className="mb-16 relative rounded-3xl overflow-hidden shadow-xl border border-forest-100 h-64 sm:h-87.5 md:h-112.5 bg-stone-100 group">
             {/* Visual background image of product line - clean and fully bright */}
             <div className="absolute inset-0">
               <img 
@@ -402,7 +402,7 @@ export default function App() {
                 </div>
 
                 {/* Product Text details */}
-                <div className="p-6 flex flex-col flex-grow justify-between">
+                <div className="p-6 flex flex-col grow justify-between">
                   <div>
                     <span className="text-[10px] font-bold text-forest-600 uppercase tracking-widest block mb-1">
                       {prod.tagline}
@@ -605,7 +605,7 @@ export default function App() {
 
               {/* Hours section */}
               <div className="mt-6 pt-5 border-t border-forest-100 flex items-center gap-4 text-xs text-stone-600">
-                <Clock className="h-5 w-5 text-forest-600 flex-shrink-0" />
+                <Clock className="h-5 w-5 text-forest-600 shrink-0" />
                 <div>
                   <span className="font-bold block text-forest-900">Horarios de Entrega Directa</span>
                   <p className="font-light text-stone-700">Lunes a Sábado de 07:00 AM a 04:00 PM (Lote fresco exprimido diario).</p>
@@ -784,7 +784,7 @@ export default function App() {
               onClick={(e) => e.stopPropagation()} // stop auto close
             >
               {/* Product graphic side */}
-              <div className="relative md:w-5/12 bg-stone-200 min-h-[250px] md:min-h-auto flex-shrink-0">
+              <div className="relative md:w-5/12 bg-stone-200 min-h-62.5 md:min-h-auto shrink-0">
                 <img 
                   src={selectedProduct.image} 
                   alt={selectedProduct.name} 
@@ -831,7 +831,7 @@ export default function App() {
                     "{selectedProduct.tagline}"
                   </p>
 
-                  <div className="h-[1px] bg-stone-150 my-4" />
+                  <div className="h-px bg-stone-150 my-4" />
 
                   {/* Long description text */}
                   <p className="text-stone-600 text-xs sm:text-sm font-light leading-relaxed mb-5">
