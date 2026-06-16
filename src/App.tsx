@@ -7,6 +7,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset
 import heroBg from './assets/images/inicio sin boton verde.jpg';
+// @ts-expect-error - image asset
+import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 import { 
   Leaf, 
   Sparkles, 
@@ -323,9 +325,9 @@ export default function App() {
                 {/* Main Image Frame - Premium polish matching style */}
                 <div className="relative bg-white p-3 rounded-2xl border border-forest-100 shadow-md overflow-hidden">
                   <img 
-                    src="./assets/images/Quienes somos version mejorada.png" 
-                  /*  alt= "Hierbas frescas y frutas seleccionadas que forman la base orgánica de nuestros jugos naturales" 
-                    className="w-full h-[400px] sm:h-[480px] object-cover rounded-xl transition-all duration-700 group-hover:scale-102" */
+                    src={quienessomosBg} 
+                    alt="Hierbas frescas y frutas seleccionadas que forman la base orgánica de nuestros jugos naturales" 
+                    className="w-full h-[400px] sm:h-[480px] object-cover rounded-xl transition-all duration-700 group-hover:scale-102"
                   />
                   
                   {/* Decorative badge with company core metric */}
