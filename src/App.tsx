@@ -323,9 +323,9 @@ export default function App() {
                 {/* Main Image Frame - Premium polish matching style */}
                 <div className="relative bg-white p-3 rounded-2xl border border-forest-100 shadow-md overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1595981267035-7b04ec84a82d?auto=format&fit=crop&q=80&w=1200" 
-                    alt="Hierbas frescas y frutas seleccionadas que forman la base orgánica de nuestros jugos naturales" 
-                    className="w-full h-[400px] sm:h-[480px] object-cover rounded-xl transition-all duration-700 group-hover:scale-102"
+                    src="./assets/images/Quienes somos version mejorada.png" 
+                  /*  alt= "Hierbas frescas y frutas seleccionadas que forman la base orgánica de nuestros jugos naturales" 
+                    className="w-full h-[400px] sm:h-[480px] object-cover rounded-xl transition-all duration-700 group-hover:scale-102" */
                   />
                   
                   {/* Decorative badge with company core metric */}
