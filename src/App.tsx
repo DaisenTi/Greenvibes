@@ -10,7 +10,7 @@ import heroBg from './assets/images/inicio sin boton verde.jpg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
-import inicioproductosBg from './assets/images/jugos_intro_redimen.png';
+import inicioproductosBg from './assets/images/1600x700.jpeg';
 // @ts-expect-error - image asset (Imagen producto mango)
 import mangoproductoBg from './assets/images/Producto_mango_modelo_sola_redimen.png';
 // @ts-expect-error - image asset (Imagen producto mora)
@@ -559,9 +559,7 @@ export default function App() {
                 />
                 
                 {/* Upper Overlay Badges */}
-                <div className="absolute top-4 left-4 bg-forest-900/95 text-lime-accent text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full backdrop-blur-sm shadow border border-forest-850">
-                  Contactanos!!
-                </div>
+                
 
                 {/* Bottom elegant overlay containing the address and coordinates */}
                 
