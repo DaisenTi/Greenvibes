@@ -6,17 +6,31 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset (Imagen de inicio)
-import heroBg from './assets/images/inicio sin boton verde.jpg';
+import heroBg from './assets/images/inicio sin boton verde op2.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
-import inicioproductosBg from './assets/images/1600x700.jpeg';
+import inicioproductosBg from './assets/images/1600x700_B.jpeg';
 // @ts-expect-error - image asset (Imagen producto mango)
-import mangoproductoBg from './assets/images/Producto_mango_modelo_sola_redimen.png';
+import mangoproductoBg from './assets/images/modelo mango.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen producto mora)
-import moraproductoBg from './assets/images/Producto_mora_recortado1.png';
+import moraproductoBg from './assets/images/modelo mora.jpg.jpeg';
+// @ts-expect-error - image asset (Imagen producto cas)
+import casproductoBg from './assets/images/modelo cas.jpg.jpeg';
+// @ts-expect-error - image asset (Imagen producto maracuya)
+import maracuyaproductoBg from './assets/images/modelo maracuya.jpg.jpeg';
+
+// @ts-expect-error - image asset (Imagen de mango expandida)
+import mangoexpandedBg from './assets/images/botella mango 800x600.jpg.jpeg';
+// @ts-expect-error - image asset (Imagen de mora expandida)
+import moraexpandedBg from './assets/images/botella mora 800x600.jpg.jpeg';
+// @ts-expect-error - image asset (Imagen de cas expandida)
+import casexpandedBg from './assets/images/botella cas 800x600.jpg.jpeg';
+// @ts-expect-error - image asset (Imagen de maracuya expandida)
+import maracuyaexpandedBg from './assets/images/botella maracuya 800x600.jpg.jpeg';
+
 // @ts-expect-error - image asset (Imagen Contactanos)
-import contactBg from './assets/images/contactanos_recortado1.png';
+import contactBg from './assets/images/contactanos 1000x1200.jpg.jpeg';
 import { 
   Leaf, 
   Sparkles, 
@@ -55,6 +69,7 @@ interface Product {
   colorClass: string;
   accentColor: string;
   image: string;
+  expandedImage: string;
 }
 
 const PRODUCTS: Product[] = [
@@ -74,7 +89,8 @@ const PRODUCTS: Product[] = [
     },
     colorClass: 'border-emerald-500/20 hover:border-emerald-500/70',
     accentColor: 'text-emerald-600 bg-emerald-50',
-    image: mangoproductoBg 
+    image: mangoproductoBg, 
+    expandedImage: mangoexpandedBg // imagen de la ampliación
   },
   {
     id: 'gold-glow',
@@ -92,7 +108,8 @@ const PRODUCTS: Product[] = [
     },
     colorClass: 'border-amber-500/20 hover:border-amber-500/70',
     accentColor: 'text-amber-600 bg-amber-50',
-    image: moraproductoBg
+    image: moraproductoBg,
+    expandedImage: moraexpandedBg // imagen de la ampliación
   },
   {
     id: 'ruby-reset',
@@ -110,7 +127,8 @@ const PRODUCTS: Product[] = [
     },
     colorClass: 'border-rose-500/20 hover:border-rose-500/70',
     accentColor: 'text-rose-600 bg-rose-50',
-    image: 'https://images.unsplash.com/photo-1600271881692-f07edca775f2?auto=format&fit=crop&q=80&w=600'
+    image: casproductoBg,
+    expandedImage: casexpandedBg
   },
   {
     id: 'pure-ginger-shot',
@@ -128,7 +146,8 @@ const PRODUCTS: Product[] = [
     },
     colorClass: 'border-yellow-500/20 hover:border-yellow-500/70',
     accentColor: 'text-yellow-700 bg-yellow-50',
-    image: 'https://images.unsplash.com/photo-1628557149591-62d299b9cfac?auto=format&fit=crop&q=80&w=600'
+    image: maracuyaproductoBg,
+    expandedImage: maracuyaexpandedBg
   }
 ];
 
@@ -443,6 +462,17 @@ export default function App() {
         id="valores" 
         className="py-24 bg-forest-900 text-stone-50 relative overflow-hidden border-b border-forest-950/30"
       >
+        {/* Background Image with Dark Overlays for high-contrast text readability */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1920"
+            alt="Fondo de hojas botánicas frescas Green Vibes" 
+            className="w-full h-full object-cover opacity-25 filter brightness-45 contrast-110"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-forest-950/95 via-forest-950/70 to-forest-950/95" />
+        </div>
+
         {/* Subtle geometric circles */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-lime-accent/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" />
@@ -451,11 +481,11 @@ export default function App() {
           
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs uppercase font-bold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Nuestro Compromiso</span>
-            <h3 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">
+            <span className="text-2xl uppercase font-extrabold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Nuestro Compromiso</span>
+            <h3 className="font-display text-3xl sm:text-4xl font-extrabold tracking-wide">
               ¿Por qué elegir Green Vibes?
             </h3>
-            <p className="text-stone-300 text-sm sm:text-base font-light mt-4 leading-relaxed">
+            <p className="text-stone-200 text-3xl sm:text-xl font-normal tracking-widest mt-4 leading-relaxed">
               Cada paso de nuestro proceso está optimizado para garantizar pureza botánica, nutrición responsable y cero desperdicios ambientales perjudiciales.
             </p>
           </div>
@@ -469,11 +499,11 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-2xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <Leaf className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-bold text-stone-50 mb-3">
+                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
                   100% Orgánico
                 </h4>
-                <p className="text-stone-300 text-xs sm:text-sm font-light leading-relaxed">
-                  Todos nuestros ingredientes provienen de huertos con certificación orgánica que respetan la biodiversidad y evitan el uso de pesticidas artificiales nocivos.
+                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
+                  Todos nuestros ingredientes provienen de huertos con certificación orgánica que respean la biodiversidad y evitan el uso de pesticidas artificiales nocivos.
                 </p>
               </div>
             </div>
@@ -484,10 +514,10 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-2xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <Sparkles className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-bold text-stone-50 mb-3">
+                <h4 className="font-display text-lg font-extrabold tracking-wide text-stone-50 mb-3">
                   Sin Azúcar Añadida
                 </h4>
-                <p className="text-stone-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p className="text-stone-200 text-xs sm:text-sm font-normal tracking-wide leading-relaxed">
                   No añadimos endulzantes artificiales ni jarabes de maíz de alta fructosa. El perfil dulce es sutil y proviene 100% de la fruta fresca madura natural.
                 </p>
               </div>
@@ -499,10 +529,10 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <Droplet className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-bold text-stone-50 mb-3">
+                <h4 className="font-display text-lg font-extrabold tracking-wide text-stone-50 mb-3">
                   Envases Sustentables
                 </h4>
-                <p className="text-stone-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p className="text-stone-200 text-xs sm:text-sm font-normal tracking-wide leading-relaxed">
                   Botellas de vidrio premium que aíslan la luz UV directa y tapas ecológicas biodegradables. Promovemos el retorno y reutilización de envases.
                 </p>
               </div>
@@ -514,10 +544,10 @@ export default function App() {
                 <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
                   <GlassWater className="h-6 w-6" />
                 </div>
-                <h4 className="font-display text-lg font-bold text-stone-50 mb-3">
+                <h4 className="font-display text-lg font-extrabold tracking-wide text-stone-50 mb-3">
                   Prensado en Frío
                 </h4>
-                <p className="text-stone-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p className="text-stone-200 text-xs sm:text-sm font-normal tracking-wide leading-relaxed">
                   Tecnología de prensa hidráulica lenta sin generación de calor por fricción eléctrica. Mantiene vitaminas, minerales y enzimas vivas hasta por 5 días.
                 </p>
               </div>
@@ -526,6 +556,7 @@ export default function App() {
           </div>
         </div>
       </section>
+
 
       {/* 6. SECCIÓN DE CONTACTO */}
       <section 
@@ -748,7 +779,7 @@ export default function App() {
               {/* Product graphic side */}
               <div className="relative md:w-5/12 bg-stone-200 min-h-62.5 md:min-h-auto shrink-0">
                 <img 
-                  src={selectedProduct.image} 
+                  src={selectedProduct.expandedImage} // <-- Carga la imagen dedicada detallada
                   alt={selectedProduct.name} 
                   className="w-full h-full object-cover"
                 />
