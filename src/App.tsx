@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset
-import heroBg from './assets/images/green_vibes_original_hero_1781618582400.jpg';
+import heroBg from './assets/images/inicio sin boton verde.jpg';
 import { 
   Leaf, 
   Sparkles, 
