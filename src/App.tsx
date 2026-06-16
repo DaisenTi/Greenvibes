@@ -11,6 +11,12 @@ import heroBg from './assets/images/inicio sin boton verde.jpg';
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
 import inicioproductosBg from './assets/images/jugos_intro_redimen.png';
+// @ts-expect-error - image asset (Imagen producto mango)
+import mangoproductoBg from './assets/images/Producto_mango_modelo_sola_redimen.png';
+// @ts-expect-error - image asset (Imagen producto mora)
+import moraproductoBg from './assets/images/Producto_mora_recortado1.png';
+// @ts-expect-error - image asset (Imagen Contactanos)
+import contactBg from './assets/images/contactanos_recortado1.png';
 import { 
   Leaf, 
   Sparkles, 
@@ -54,7 +60,7 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: 'vitality-green',
-    name: 'Vitality Green',
+    name: 'Jugo de mango',
     tagline: 'Desintoxica y energiza tu cuerpo',
     description: 'Nuestra firma verde por excelencia. Una combinación vibrante y refrescante de kale, manzana verde, pepino crispado y jengibre.',
     longDescription: 'Vitality Green es el pilar de nuestra filosofía de bienestar. Formulado meticulosamente para oxigenar tus células, limpiar el sistema digestivo y aportar una dosis intensa de clorofila viva. Cada botella contiene el equivalente a 1.2 kg de hojas verdes cultivadas localmente.',
@@ -68,11 +74,11 @@ const PRODUCTS: Product[] = [
     },
     colorClass: 'border-emerald-500/20 hover:border-emerald-500/70',
     accentColor: 'text-emerald-600 bg-emerald-50',
-    image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=80&w=600'
+    image: mangoproductoBg 
   },
   {
     id: 'gold-glow',
-    name: 'Gold Glow',
+    name: 'Jugo de mora',
     tagline: 'Brillo solar e inmunidad reforzada',
     description: 'Sabor tropicalizado y restaurador con cúrcuma fresca de raíz, naranja dulce pura, piña de temporada y un toque estimulante de pimienta.',
     longDescription: 'Gold Glow está diseñado para combatir la inflamación sistémica y despertar tu sistema inmunitario. La piña orgánica y el jengibre aportan notas ácidas y picantes exquisitas, mientras que un toque milimétrico de pimienta negra multiplica por 2000% la absorción de la curcumina.',
@@ -86,11 +92,11 @@ const PRODUCTS: Product[] = [
     },
     colorClass: 'border-amber-500/20 hover:border-amber-500/70',
     accentColor: 'text-amber-600 bg-amber-50',
-    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600'
+    image: moraproductoBg
   },
   {
     id: 'ruby-reset',
-    name: 'Ruby Reset',
+    name: 'Jugo de cas',
     tagline: 'Recuperación muscular celular activa',
     description: 'La fusión terrosa y dulce de remolacha dorada, arándanos silvestres antioxidantes, manzanas rojas de huerto y menta.',
     longDescription: 'El elixir de la resistencia. Ruby Reset aprovecha los nitratos naturales de la remolacha seleccionada para dilatar los vasos sanguíneos y mejorar la oxigenación celular, haciéndolo ideal para entusiastas del deporte o periodos de agotamiento mental extremo. Su sabor es refrescantemente herbario gracias a la menta fresca.',
@@ -108,7 +114,7 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'pure-ginger-shot',
-    name: 'Pure Ginger Shot',
+    name: 'Jugo de maracuya',
     tagline: 'Máxima vitalidad concentrada',
     description: 'Una inyección intensa e inmediata para tu salud con jengibre puro prensado en frío, limón de granja y un elixir de miel de agave.',
     longDescription: 'Un concentrado diseñado para cuando necesitas un impulso de rendimiento y resistencia inmediata. El shot purifica las vías respiratorias superiores, acelera la tasa metabólica basal y equilibra el ph del tracto gastrointestinal gracias a su concentración superlativa de jingerol activo.',
@@ -335,7 +341,7 @@ export default function App() {
                   {/* Decorative badge with company core metric */}
                   <div className="absolute bottom-8 left-8 right-8 bg-forest-950/95 backdrop-blur-md rounded-2xl p-6 text-stone-50 shadow-xl border border-forest-800/80">
                     <span className="font-display block text-3xl font-extrabold text-lime-accent">100% Cero</span>
-                    <span className="text-xs uppercase tracking-widest text-stone-300 block font-bold mt-1">Químicos sintéticos o pasteurización</span>
+                    <span className="text-xs uppercase tracking-widest text-stone-300 block font-bold mt-1">Químicos sintéticos</span>
                     <p className="text-xs text-stone-400 mt-2 leading-relaxed">
                       Llegamos directo del extractor higiénico frío a tu envase de vidrio con la mayor rapidez garantizada.
                     </p>
@@ -535,79 +541,35 @@ export default function App() {
               Conectemos de forma natural
             </h2>
             <p className="text-stone-600 text-sm sm:text-base font-light mt-4">
-              ¿Quieres distribuir nuestros jugos, tienes dudas o deseas hacer un pedido especial institucional de fin de semana para eventos? Estamos para ayudarte.
+              Si deseas contactarte o seguirnos en nuestras redes sociales, aqui te dejamos toda la información disponible!!
             </p>
           </div>
 
           {/* DISEÑO DE DOS COLUMNAS PERFECTAMENTE ALINEADAS */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
             
-            {/* COLUMNA IZQUIERDA: IMAGEN ESTÉTICA CON MAPA SIMULADO */}
-            <div className="lg:col-span-6 flex flex-col justify-between h-full bg-white rounded-3xl p-6 sm:p-8 border border-forest-100 shadow-sm">
+            {/* COLUMNA IZQUIERDA: IMAGEN ESTÉTICA COMPLETA */}
+            <div className="lg:col-span-6 flex flex-col justify-between h-full bg-white rounded-3xl p-6 sm:p-8 border border-forest-100 shadow-sm" id="workshop-image-column">
               
-              <div className="space-y-6">
-                {/* Small Map Indicator / Shop Image */}
-                <div className="relative rounded-2xl overflow-hidden h-52 shadow-sm border border-forest-100">
-                  <img 
-                    src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=1200" 
-                    alt="Aesthetic organic store counter representing Green Vibes central workshop location" 
-                    className="w-full h-full object-cover filter brightness-95"
-                  />
-                  <div className="absolute top-4 left-4 bg-forest-900/95 text-lime-accent text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full backdrop-blur-sm shadow border border-forest-850">
-                    Taller Central Green Vibes
-                  </div>
+              <div className="relative rounded-2xl overflow-hidden flex-grow min-h-[380px] md:min-h-[460px] shadow-sm border border-forest-100 group">
+                <img 
+                  src={contactBg}
+                  alt="Aesthetic organic store counter representing Green Vibes central workshop location" 
+                  className="w-full h-full object-cover filter brightness-90 transition-all duration-700 group-hover:scale-105"
+                />
+                
+                {/* Upper Overlay Badges */}
+                <div className="absolute top-4 left-4 bg-forest-900/95 text-lime-accent text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full backdrop-blur-sm shadow border border-forest-850">
+                  Contactanos!!
                 </div>
 
-                {/* Simulated Map Visual representation */}
-                <div className="bg-stone-50 rounded-2xl p-5 border border-forest-100 relative">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <h4 className="font-display text-sm font-bold text-forest-900 uppercase tracking-widest mb-1 flex items-center gap-1.5">
-                        <MapPin className="h-4.5 w-4.5 text-forest-600" /> Coordenadas de Frescura
-                      </h4>
-                      <p className="text-xs text-stone-500 font-light">Calle Botánica 412, Colonia Del Valle, CP 03100, CDMX.</p>
-                    </div>
-                    {/* Visual coordinates graphic */}
-                    <span className="font-mono text-[9px] text-stone-400 bg-stone-200/50 px-2.5 py-0.5 rounded font-semibold animate-pulse">
-                      19.3897° N, 99.1678° W
-                    </span>
-                  </div>
-                  
-                  {/* Styled SVG elements mimicking map lines and markers */}
-                  <div className="mt-4 h-24 bg-white rounded-xl border border-forest-100 overflow-hidden relative flex items-center justify-center">
-                    
-                    {/* SVG abstract map layout */}
-                    <svg className="absolute inset-0 w-full h-full text-stone-300 stroke-current stroke-1" viewBox="0 0 100 100" preserveAspectRatio="none">
-                      <line x1="10" y1="0.5" x2="10" y2="100" />
-                      <line x1="50" y1="0" x2="50" y2="100" strokeWidth="2" />
-                      <line x1="85" y1="0" x2="85" y2="100" />
-                      
-                      <line x1="0" y1="20" x2="100" y2="20" />
-                      <line x1="0" y1="65" x2="100" y2="65" strokeWidth="2" />
-                      <line x1="0" y1="85" x2="100" y2="85" />
-                      
-                      {/* Abstract park representation */}
-                      <rect x="15" y="25" width="30" height="35" rx="4" fill="#ecfdf5" fillOpacity="0.4" stroke="#a7f3d0" strokeWidth="0.5" />
-                    </svg>
-
-                    {/* Active Pulse Marker */}
-                    <div className="absolute top-[52%] left-[48%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                      <span className="relative flex h-3 w-3">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-forest-500 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-forest-700"></span>
-                      </span>
-                      <span className="text-[8px] bg-forest-900 text-stone-100 px-1.5 py-0.5 rounded font-bold shadow-md tracking-wider uppercase mt-1">
-                        Estás Aquí
-                      </span>
-                    </div>
-
-                  </div>
-                </div>
+                {/* Bottom elegant overlay containing the address and coordinates */}
+                
               </div>
 
               {/* Hours section */}
               <div className="mt-6 pt-5 border-t border-forest-100 flex items-center gap-4 text-xs text-stone-600">
-                <Clock className="h-5 w-5 text-forest-600 shrink-0" />
+                <Clock className="h-5 w-5 text-forest-600 flex-shrink-0" />
                 <div>
                   <span className="font-bold block text-forest-900">Horarios de Entrega Directa</span>
                   <p className="font-light text-stone-700">Lunes a Sábado de 07:00 AM a 04:00 PM (Lote fresco exprimido diario).</p>
@@ -699,7 +661,7 @@ export default function App() {
                       </div>
                       <div>
                         <span className="text-xs font-bold text-stone-900 block group-hover:text-forest-900 transition-colors">
-                          @greenvibes.mx
+                          @greenvibes.cr
                         </span>
                         <span className="text-[10px] text-stone-500 font-light">
                           Instagram oficial
@@ -720,7 +682,7 @@ export default function App() {
                       </div>
                       <div>
                         <span className="text-xs font-bold text-stone-900 block group-hover:text-forest-900 transition-colors">
-                          Green Vibes México
+                          Green Vibes Costa Rica
                         </span>
                         <span className="text-[10px] text-stone-500 font-light">
                           Comunidad en Facebook
