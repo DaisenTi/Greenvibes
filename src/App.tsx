@@ -21,7 +21,7 @@ import casproductoBg from './assets/images/modelo cas.jpg.jpeg';
 import maracuyaproductoBg from './assets/images/modelo maracuya.jpg.jpeg';
 
 // @ts-expect-error - image asset (Imagen de mango expandida)
-import mangoexpandedBg from './assets/images/botella mango 800x600 B.jpg.jpeg';
+import mangoexpandedBg from './assets/images/botella mango 800x600 C.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de mora expandida)
 import moraexpandedBg from './assets/images/botella mora 800x600.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de cas expandida)
