@@ -1,0 +1,6 @@
+{
+  "name": "Green Vibes",
+  "description": "Sitio web institucional y catálogo premium de Green Vibes, marca de jugos naturales 100% orgánicos, frescos y prensados en frío.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

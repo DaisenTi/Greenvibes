@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-forest-950: #022c22; /* Emerald 950 */
+  --color-forest-900: #064e3b; /* Emerald 900 */
+  --color-forest-800: #065f46; /* Emerald 800 */
+  --color-forest-700: #047857; /* Emerald 700 */
+  --color-forest-600: #059669; /* Emerald 600 */
+  --color-forest-500: #10b981; /* Emerald 500 */
+  --color-forest-400: #34d399; /* Emerald 400 */
+  --color-forest-300: #6ee7b7; /* Emerald 300 */
+  --color-forest-200: #a7f3d0; /* Emerald 200 */
+  --color-forest-100: #d1fae5; /* Emerald 100 */
+  --color-forest-50: #ecfdf5;  /* Emerald 50 */
+  
+  --color-lime-accent: #84cc16; /* Lime 500 matching theme definition */
+  --color-lime-light: #f7fee7;
+}
+
+/* Custom scrollbar and smooth behaviors */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-lime-accent);
+  color: var(--color-forest-950);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+
