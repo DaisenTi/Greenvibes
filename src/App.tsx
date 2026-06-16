@@ -21,7 +21,7 @@ import casproductoBg from './assets/images/modelo cas.jpg.jpeg';
 import maracuyaproductoBg from './assets/images/modelo maracuya.jpg.jpeg';
 
 // @ts-expect-error - image asset (Imagen de mango expandida)
-import mangoexpandedBg from './assets/images/botella mango 800x600 C.jpg.jpeg';
+import mangoexpandedBg from './assets/images/botella mango 800x600 D.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de mora expandida)
 import moraexpandedBg from './assets/images/botella mora 800x600.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de cas expandida)
@@ -470,7 +470,7 @@ export default function App() {
             className="w-full h-full object-cover opacity-25 filter brightness-45 contrast-110"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-forest-950/95 via-forest-950/70 to-forest-950/95" />
+          <div className="absolute inset-0 bg-linear-to-b from-forest-950/95 via-forest-950/70 to-forest-950/95" />
         </div>
 
         {/* Subtle geometric circles */}
