@@ -680,7 +680,7 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
                     
                     {/* INSTAGRAM BUTTON */}
                     <a 
-                      href="https://instagram.com" 
+                      href="https://www.instagram.com/greenvibes_cr" 
                       target="_blank" 
                       rel="noreferrer"
                       className="flex items-center gap-3.5 p-5 bg-stone-50 hover:bg-lime-accent/15 border border-stone-150 hover:border-lime-accent/50 rounded-xl transition-all duration-300 group"
