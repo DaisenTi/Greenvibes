@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset (Imagen de inicio)
-import heroBg from './assets/images/inicio sin boton verde op3.jpg.jpeg';
+import heroBg from './assets/images/inicio_ingles.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
