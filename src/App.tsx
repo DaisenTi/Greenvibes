@@ -75,17 +75,17 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: 'vitality-green',
-    name: 'Jugo de mango',
-    tagline: 'Desintoxica y energiza tu cuerpo',
-    description: 'Nuestra firma verde por excelencia. Una combinación vibrante y refrescante de kale, manzana verde, pepino crispado y jengibre.',
-    longDescription: 'Vitality Green es el pilar de nuestra filosofía de bienestar. Formulado meticulosamente para oxigenar tus células, limpiar el sistema digestivo y aportar una dosis intensa de clorofila viva. Cada botella contiene el equivalente a 1.2 kg de hojas verdes cultivadas localmente.',
-    ingredients: ['Kale Orgánico', 'Manzana Verde Granny Smith', 'Pepino de Granja', 'Limón Myers', 'Jengibre Azul Prensado'],
-    benefits: ['Altamente Alcalinizante', 'Apoya la digestión saludable', 'Energía natural sostenida sin bajones'],
+    name: 'Mango Juice',
+    tagline: 'Promotes Heart Health',
+    description: 'Sweet, smooth,and naturally energizing. Mango provides carotenoids, Vitamin C, and antioxidants',
+    longDescription: 'Mango transforms tropical sweetness into a functional experience rich in nutrition and natural energy. Made with fresh mango and fortified with Vitamin C, this juice stands out for its content of antioxidant compounds such as mangiferin, carotenoids, and polyphenols, which have been associated with anti-inflammatory effects and cellular protection. Multiple studies suggest that mango contains bioactive compounds capable of supporting digestive wellness, immune health, and oxidative stress regulation.',
+    ingredients: ['Fresh Mango', 'Water', 'Citric Acid', 'Vitamin C'],
+    benefits: ['Antioxidant support', 'Immune wellness', 'Digestive health'],
     nutritionalFacts: {
-      calories: 95,
-      sugar: '12g (natural de frutas)',
-      protein: '3g',
-      vitamins: ['Vitamina K (320% IDR)', 'Vitamina C (110% IDR)', 'Hierro', 'Ácido Fólico']
+      calories: 42,
+      sugar: '9.2g',
+      protein: '0.3g',
+      vitamins: ['Vitamin K', 'Vitamin C', 'Iron', 'Folic Acid']
     },
     colorClass: 'border-emerald-500/20 hover:border-emerald-500/70',
     accentColor: 'text-emerald-600 bg-emerald-50',
@@ -94,17 +94,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'gold-glow',
-    name: 'Jugo de mora',
-    tagline: 'Brillo solar e inmunidad reforzada',
-    description: 'Sabor tropicalizado y restaurador con cúrcuma fresca de raíz, naranja dulce pura, piña de temporada y un toque estimulante de pimienta.',
-    longDescription: 'Gold Glow está diseñado para combatir la inflamación sistémica y despertar tu sistema inmunitario. La piña orgánica y el jengibre aportan notas ácidas y picantes exquisitas, mientras que un toque milimétrico de pimienta negra multiplica por 2000% la absorción de la curcumina.',
-    ingredients: ['Piña de Monte Lindo', 'Zanahoria dulce', 'Cúrcuma Orgánica en Raíz', 'Naranja Valencia', 'Pimienta Negra de la Selva'],
-    benefits: ['Potente antiinflamatorio natural', 'Estimula el sistema inmunitario', 'Aporta luminosidad radiante y vitamina A a la piel'],
+    name: 'Blackberry Juice',
+    tagline: 'Boosts Immunity & Skin Health',
+    description: 'A burst of natural antioxidants and bold berry flavor. Rich in anthocyanins and polyphenols, blackberry supports cellular wellness, immune health, and protection against oxidative stress. A vibrant, refreshing, and naturally functional juice.',
+    longDescription: 'Blackberry is a bold and deeply antioxidant-rich beverage crafted from fresh blackberries packed with anthocyanins and phenolic compounds. Blackberries are scientifically recognized for their high antioxidant capacity and potential to reduce inflammation and oxidative stress associated with metabolic and cardiovascular conditions.',
+    ingredients: ['Fresh blackberries', 'Water', 'Citric Acid', 'Vitamin C',],
+    benefits: ['High antioxidant capacity', 'Natural immune support', 'Potential anti-inflammatory', 'Metabolic wellness',],
     nutritionalFacts: {
-      calories: 110,
-      sugar: '16g (natural de frutas)',
-      protein: '1.5g',
-      vitamins: ['Betacaroteno (Vitamina A)', 'Vitamina C (240% IDR)', 'Manganeso']
+      calories: 39,
+      sugar: '8.5g',
+      protein: '0.4g',
+      vitamins: ['Vitamin C', 'Vitamin K', 'Vitamin E']
     },
     colorClass: 'border-amber-500/20 hover:border-amber-500/70',
     accentColor: 'text-amber-600 bg-amber-50',
@@ -113,17 +113,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'ruby-reset',
-    name: 'Jugo de cas',
-    tagline: 'Recuperación muscular celular activa',
-    description: 'La fusión terrosa y dulce de remolacha dorada, arándanos silvestres antioxidantes, manzanas rojas de huerto y menta.',
-    longDescription: 'El elixir de la resistencia. Ruby Reset aprovecha los nitratos naturales de la remolacha seleccionada para dilatar los vasos sanguíneos y mejorar la oxigenación celular, haciéndolo ideal para entusiastas del deporte o periodos de agotamiento mental extremo. Su sabor es refrescantemente herbario gracias a la menta fresca.',
-    ingredients: ['Remolacha de Cosecha Propia', 'Arándanos Silvestres', 'Manzana Royal Gala', 'Limón Persa', 'Hojas de Menta Fresca'],
-    benefits: ['Mejora el rendimiento deportivo', 'Fomenta la salud cardiovascular', 'Cargado de antioxidantes protectores de radicales libres'],
+    name: 'Cas Juice',
+    tagline: 'natural hydration, and digestive benefits',
+    description: 'A Costa Rican tropical treasure known for its exceptional Vitamin C content and antioxidant potential. Refreshing, tart, and naturally revitalizing, it supports hydration and everyday wellness.',
+    longDescription: 'Cas transforms one of Costa Rica’s most iconic tropical fruits into a uniquely refreshing functional beverage. This tropical fruit stands out for its exceptionally high Vitamin C content, phenolic compounds, and antioxidant capacity, making it one of the region’s most promising functional fruits.',
+    ingredients: ['Fresh cas fruit', 'Water', 'Citric Acid', 'Vitamin C',],
+    benefits: ['Naturally high in Vitamin C', 'Strong antioxidant potential', 'Supports hydration and digestive wellness', 'Tropical Functional nutrition'],
     nutritionalFacts: {
-      calories: 120,
-      sugar: '18g (natural de frutas)',
-      protein: '2g',
-      vitamins: ['Niacina (B3)', 'Antocianinas', 'Potasio (24% IDR)', 'Fósforo']
+      calories: 38,
+      sugar: '8g',
+      protein: '0.4g',
+      vitamins: ['Vitamin C', 'Vitamin A', 'Vitamin B']
     },
     colorClass: 'border-rose-500/20 hover:border-rose-500/70',
     accentColor: 'text-rose-600 bg-rose-50',
@@ -132,17 +132,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'pure-ginger-shot',
-    name: 'Jugo de maracuya',
-    tagline: 'Máxima vitalidad concentrada',
-    description: 'Una inyección intensa e inmediata para tu salud con jengibre puro prensado en frío, limón de granja y un elixir de miel de agave.',
-    longDescription: 'Un concentrado diseñado para cuando necesitas un impulso de rendimiento y resistencia inmediata. El shot purifica las vías respiratorias superiores, acelera la tasa metabólica basal y equilibra el ph del tracto gastrointestinal gracias a su concentración superlativa de jingerol activo.',
-    ingredients: ['Jengibre de Altura Prensado', 'Limón Real exprimido', 'Infusión de Miel de Agave Azul', 'Pizca de Cayena Orgánica'],
-    benefits: ['Estimulante digestivo de acción rápida', 'Combate el cansancio y la somnolencia', 'Alivio natural de vías respiratorias'],
+    name: 'Passion Fruit Juice',
+    tagline: 'Stress Reduction & Sleep',
+    description: 'Bold, tropical, and full of vitality. Rich in Vitamin C, polyphenols, and natural antioxidants, passion fruit supports digestive wellness, immune function, and cellular protection. A vibrant tropical experience in every bottle.',
+    longDescription: 'Maracuyá combines tropical intensity and functional nutrition in a vibrant beverage rich in Vitamin C, carotenoids, and antioxidant compounds. Passion fruit has been extensively studied for its bioactive properties associated with digestive wellness, oxidative stress reduction, and potential anti-inflammatory benefits.',
+    ingredients: ['Fresh passion fruit', 'Water', 'Citric Acid', 'Vitamin C'],
+    benefits: ['Rich in vitamin C and antioxidants', 'Supports digestive wellness', 'Potential anti-inflammatory effects', 'Tropical hydration and wellness'],
     nutritionalFacts: {
       calories: 45,
-      sugar: '6g',
-      protein: '1g',
-      vitamins: ['Vitamina C', 'Zinc', 'Gingelol', 'Magnesio']
+      sugar: '9.5g',
+      protein: '0.5g',
+      vitamins: ['Vitamin B2', 'Vitamin C', 'Vitamin A', 'Vitamin B3']
     },
     colorClass: 'border-yellow-500/20 hover:border-yellow-500/70',
     accentColor: 'text-yellow-700 bg-yellow-50',
@@ -202,7 +202,7 @@ export default function App() {
               <Leaf className="h-5 w-5 fill-current" />
             </div>
             <span className="font-display text-xl font-bold tracking-tight text-forest-900 group-hover:text-forest-700 transition-colors">
-              Green <span className="text-forest-600">Vibes</span>
+              Gréén <span className="text-forest-600">Vibes</span>
             </span>
           </button>
 
@@ -213,28 +213,28 @@ export default function App() {
               className="hover:text-forest-700 transition-colors cursor-pointer"
               id="nav-about-us"
             >
-              Quiénes Somos
+              About Us
             </button>
             <button 
               onClick={() => scrollToSection('productos')}
               className="hover:text-forest-700 transition-colors cursor-pointer"
               id="nav-products"
             >
-              Productos
+              Products
             </button>
             <button 
               onClick={() => scrollToSection('valores')}
               className="hover:text-forest-700 transition-colors cursor-pointer"
               id="nav-highlights"
             >
-              Elegirnos
+              Choose Us
             </button>
             <button 
               onClick={() => scrollToSection('contacto')}
               className="hover:text-forest-700 transition-colors cursor-pointer"
               id="nav-contact"
             >
-              Contacto
+              Contact
             </button>
           </nav>
 
@@ -245,7 +245,7 @@ export default function App() {
               className="bg-forest-900 hover:bg-forest-800 text-stone-50 px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
               id="header-cta"
             >
-              Explorar Menú
+              Explore Menu
             </button>
           </div>
         </div>
@@ -278,7 +278,7 @@ export default function App() {
               className="group flex items-center gap-2 bg-white/90 hover:bg-white text-forest-900 border border-stone-200 hover:border-forest-300 font-bold tracking-widest uppercase px-6 py-3.5 rounded-full text-xs transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer backdrop-blur-xs"
               id="hero-cta-btn"
             >
-              Explorar Menú
+              Explore Menu
               <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300 text-forest-700" />
             </button>
           </motion.div>
@@ -297,7 +297,7 @@ export default function App() {
           
           {/* Subtle accent text with professional polish custom left border indicator */}
           <div className="flex flex-col items-center md:items-start mb-6">
-            <span className="text-xs uppercase font-bold tracking-widest text-forest-600 border-l-4 border-lime-accent pl-3.5 block">Nuestra Filosofía</span>
+            <span className="text-xs uppercase font-bold tracking-widest text-forest-600 border-l-4 border-lime-accent pl-3.5 block">Our Philosophy</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -305,18 +305,19 @@ export default function App() {
             {/* LADO IZQUIERDO: TEXT CONTENT */}
             <div className="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-forest-900 mb-6 leading-tight">
-                Honramos a la tierra para nutrir tu esencia vibrante
+                Natural Hydration
               </h2>
               
               <div className="space-y-6 text-stone-700 text-base sm:text-lg leading-relaxed font-light">
                 <p>
-                  En <strong className="text-forest-900 font-semibold">Green Vibes</strong> creemos que el bienestar no es un destino de paso, sino un estilo de vida activo y consciente. Nacimos con el propósito de conectar de manera genuina las maravillosas bondades de la tierra con tu ajetreado día a día.
+                   <strong className="text-forest-900 font-semibold">Green Vibes</strong> transforms real tropical fruits into functional wellness beverages crafted for modern healthy living. Every bottle is made with natural ingredients, fortified with Vitamin C, packaged in recyclable glass, and designed to deliver clean, refreshing nutrition without artificial preservatives or unnecessary additives. More than just juice, Green Vibes is a daily wellness ritual — vibrant, functional, and naturally energizing.
+Our formulations are developed using real fruit, antioxidant-rich ingredients, and science-backed nutritional principles to support hydration, digestive wellness, immune health, and natural vitality. Packaged in glass to help minimize exposure to microplastics commonly associated with plastic beverage containers, Green Vibes offers a cleaner and more sustainable way to enjoy tropical nutrition.
                 </p>
                 <p>
-                  Cada una de nuestras bebidas es elaborada con hortalizas, tubérculos y frutas cultivados respetuosamente por agricultores de proximidad bajo principios de sustentabilidad. El método artesanal de prensado en frío nos permite conservar intactos el 100% de las enzimas, minerales y nutrientes, para que experimentes la naturaleza en su estado más potente, transparente y limpio.
+                  Bright, tropical, refreshing, and naturally vibrant flavors inspired by Costa Rica's biodiversity.
                 </p>
                 <p className="text-forest-700 font-semibold">
-                  Sin conservadores, sin azúcares engañosas, sin pasteurización térmica. Solo ingredientes puros que tu cuerpo reconoce y agradece al instante.
+                  No artificial flavors · No artificial preservatives · Glass bottled · Microplastic-free experience · Locally sourced fruit · Natural ingredients
                 </p>
               </div>
 
@@ -327,8 +328,8 @@ export default function App() {
                     <Check className="h-4 w-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-forest-900">100% Íntegro</h4>
-                    <p className="text-xs text-stone-500">Sin aditivos ni colorantes</p>
+                    <h4 className="text-base font-extrabold text-forest-900 tracking-wide">100% Intact</h4>
+                    <p className="text-xs text-stone-500">Real tropical fruits · Natural Vitamin C</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2.5">
@@ -336,8 +337,8 @@ export default function App() {
                     <Check className="h-4 w-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-forest-900">Artesanos Green</h4>
-                    <p className="text-xs text-stone-500">Elaboración ética y local</p>
+                    <h4 className="text-base font-extrabold text-forest-900 tracking-wide">Local artisans</h4>
+                    <p className="text-xs text-stone-500">Ethical and local production</p>
                   </div>
                 </div>
               </div>
@@ -359,10 +360,10 @@ export default function App() {
                   
                   {/* Decorative badge with company core metric */}
                   <div className="absolute bottom-8 left-8 right-8 bg-forest-950/95 backdrop-blur-md rounded-2xl p-6 text-stone-50 shadow-xl border border-forest-800/80">
-                    <span className="font-display block text-3xl font-extrabold text-lime-accent">100% Cero</span>
-                    <span className="text-xs uppercase tracking-widest text-stone-300 block font-bold mt-1">Químicos sintéticos</span>
+                    <span className="font-display block text-3xl font-extrabold text-lime-accent">100% Zero</span>
+                    <span className="text-xs uppercase tracking-widest text-stone-300 block font-bold mt-1">No chemicals</span>
                     <p className="text-xs text-stone-400 mt-2 leading-relaxed">
-                      Llegamos directo del extractor higiénico frío a tu envase de vidrio con la mayor rapidez garantizada.
+                      I don't know what to put here.
                     </p>
                   </div>
                 </div>
@@ -384,10 +385,10 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs uppercase font-bold tracking-widest text-forest-600 mb-3.5 block border-l-4 border-lime-accent pl-3.5 w-fit mx-auto">Premium Cold Press</span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-forest-900 mb-6">
-              Elixir natural embotellado en vidrio artesanal
+              Natural elixir bottled in high-quality glass
             </h2>
             <p className="text-stone-600 text-base sm:text-lg leading-relaxed font-light">
-              Nuestra selecta gama de bebidas prensadas está balanceada bajo minuciosos análisis nutricionales. Haz clic sobre cualquiera para descubrir sus secretos.
+              Our beverage line is formulated based on meticulous nutritional analysesOur beverage line is formulated based on meticulous nutritional analyses
             </p>
           </div>
 
@@ -423,7 +424,7 @@ export default function App() {
                   {/* Hover visual highlight cue */}
                   <div className="absolute inset-0 bg-forest-950/20 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="bg-white text-forest-950 text-xs font-bold uppercase tracking-widest px-4 py-2.5 rounded-full shadow-md">
-                      Ver Ingredientes
+                      View ingredients
                     </span>
                   </div>
                 </div>
@@ -444,9 +445,9 @@ export default function App() {
                   
                   {/* Card Actions Footer */}
                   <div className="mt-5 pt-4 border-t border-forest-100 flex items-center justify-between text-xs font-bold text-forest-800">
-                    <span className="text-stone-400 font-mono text-[9px] uppercase font-medium">Bebida Activa</span>
+                    <span className="text-stone-400 font-mono text-[9px] uppercase font-medium">Drink available</span>
                     <span className="flex items-center gap-1 text-forest-700 hover:text-forest-900">
-                      Detalle <ChevronRight className="h-3 w-3" />
+                      Details <ChevronRight className="h-3 w-3" />
                     </span>
                   </div>
                 </div>
@@ -481,12 +482,12 @@ export default function App() {
           
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-2xl uppercase font-extrabold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Nuestro Compromiso</span>
+            <span className="text-2xl uppercase font-extrabold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Our Commitment</span>
             <h3 className="font-display text-3xl sm:text-4xl font-extrabold tracking-wide">
-              ¿Por qué elegir Green Vibes?
+              Why choose Gréén Vibes?
             </h3>
             <p className="text-stone-200 text-3xl sm:text-xl font-normal tracking-widest mt-4 leading-relaxed">
-              Cada paso de nuestro proceso está optimizado para garantizar pureza botánica, nutrición responsable y cero desperdicios ambientales perjudiciales.
+              Every step of our process is optimized to ensure botanical purity, responsible nutrition, and zero harmful environmental waste.
             </p>
           </div>
 
@@ -500,10 +501,10 @@ export default function App() {
                   <Leaf className="h-6 w-6" />
                 </div>
                 <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  100% Orgánico
+                  100% Bio
                 </h4>
                 <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  Todos nuestros ingredientes provienen de huertos con certificación orgánica que respean la biodiversidad y evitan el uso de pesticidas artificiales nocivos.
+                  All of our ingredients come from certified organic farms that respect biodiversity and avoid the use of harmful synthetic pesticides.
                 </p>
               </div>
             </div>
@@ -515,10 +516,10 @@ export default function App() {
                   <Sparkles className="h-6 w-6" />
                 </div>
                 <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  Sin Azúcar Añadida
+                  No added sugar
                 </h4>
                 <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  No añadimos endulzantes artificiales ni jarabes de maíz de alta fructosa. El perfil dulce es sutil y proviene 100% de la fruta fresca madura natural.
+                  We do not add artificial sweeteners or high-fructose corn syrup. The sweetness is subtle and comes 100% from natural, ripe fresh fruit.
                 </p>
               </div>
             </div>
@@ -530,10 +531,10 @@ export default function App() {
                   <Droplet className="h-6 w-6" />
                 </div>
                 <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  Envases Sustentables
+                  Sustainable Packaging
                 </h4>
                 <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  Botellas de vidrio premium que aíslan la luz UV directa y tapas ecológicas biodegradables. Promovemos el retorno y reutilización de envases.
+                  Premium glass bottles that block direct UV light and eco-friendly, biodegradable caps. We promote the return and reuse of containers.
                 </p>
               </div>
             </div>
@@ -545,10 +546,10 @@ export default function App() {
                   <GlassWater className="h-6 w-6" />
                 </div>
                 <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  Prensado en Frío
+                  I don't know what to put here
                 </h4>
                 <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  Tecnología de prensa hidráulica lenta sin generación de calor por fricción eléctrica. Mantiene vitaminas, minerales y enzimas vivas hasta por 5 días.
+                  i'm out of ideas
                 </p>
               </div>
             </div>
@@ -567,12 +568,12 @@ export default function App() {
           
           {/* Header Contact Block */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs uppercase font-bold tracking-widest text-forest-600 block mb-3.5 border-l-4 border-lime-accent pl-3.5 w-fit mx-auto">Canal Abierto</span>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-forest-900">
-              Conectemos de forma natural
+            <span className="text-sm uppercase font-extrabold tracking-widest text-forest-700 block mb-4 border-l-4 border-lime-accent pl-3.5 w-fit mx-auto">Open contact</span>
+            <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-forest-900">
+              Connect with flavor
             </h2>
-            <p className="text-stone-600 text-sm sm:text-base font-light mt-4">
-              Si deseas contactarte o seguirnos en nuestras redes sociales, aqui te dejamos toda la información disponible!!
+            <p className="text-stone-800 text-base sm:text-lg font-medium mt-4 leading-relaxed">
+              If you want to get in touch or follow our social media
             </p>
           </div>
 
@@ -582,7 +583,7 @@ export default function App() {
             {/* COLUMNA IZQUIERDA: IMAGEN ESTÉTICA COMPLETA */}
             <div className="lg:col-span-6 flex flex-col justify-between h-full bg-white rounded-3xl p-6 sm:p-8 border border-forest-100 shadow-sm" id="workshop-image-column">
               
-              <div className="relative rounded-2xl overflow-hidden flex-grow min-h-[380px] md:min-h-[460px] shadow-sm border border-forest-100 group">
+              <div className="relative rounded-2xl overflow-hidden grow min-h-95 md:min-h-115 shadow-sm border border-forest-100 group">
                 <img 
                   src={contactBg}
                   alt="Aesthetic organic store counter representing Green Vibes central workshop location" 
@@ -597,11 +598,11 @@ export default function App() {
               </div>
 
               {/* Hours section */}
-              <div className="mt-6 pt-5 border-t border-forest-100 flex items-center gap-4 text-xs text-stone-600">
-                <Clock className="h-5 w-5 text-forest-600 flex-shrink-0" />
+              <div className="mt-6 pt-5 border-t border-forest-150 flex items-center gap-4 text-sm text-stone-800">
+                <Clock className="h-6 w-6 text-forest-700 shrink-0" />
                 <div>
-                  <span className="font-bold block text-forest-900">Horarios de Entrega Directa</span>
-                  <p className="font-light text-stone-700">Lunes a Sábado de 07:00 AM a 04:00 PM (Lote fresco exprimido diario).</p>
+                  <span className="font-extrabold block text-forest-950 text-xl">Schedules</span>
+                  <p className="font-semibold text-stone-700 mt-0.5">Monday to Friday, from 10:00 AM to 04:00 PM.</p>
                 </div>
               </div>
 
@@ -612,11 +613,11 @@ export default function App() {
               
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-display text-2xl font-bold text-forest-900 mb-2">
-                    Canales de Atención Directa
+                  <h3 className="font-display text-3xl font-extrabold text-forest-950 mb-3">
+                    Our Social Media!
                   </h3>
-                  <p className="text-stone-600 text-sm font-light leading-relaxed">
-                    Estamos encantados de atenderte de forma personalizada. Conéctate directamente con nuestros asesores de bienestar para pedidos, cotizaciones especiales o soporte.
+                  <p className="text-stone-800 text-base font-medium leading-relaxed">
+                    We're delighted to take on a new order. Here are the ways to contact us. Don't forget to follow us on social media.
                   </p>
                 </div>
 
@@ -626,21 +627,21 @@ export default function App() {
                   {/* PHONE CARD */}
                   <a 
                     href="tel:+525584219900"
-                    className="group flex items-center gap-5 p-5 bg-stone-50 hover:bg-forest-50 border border-stone-200/60 hover:border-forest-200 rounded-2xl transition-all duration-300 shadow-xs"
+                    className="group flex items-center gap-6 p-6 bg-stone-50 hover:bg-forest-50 border border-stone-300 hover:border-forest-300 rounded-2xl transition-all duration-300 shadow-sm"
                     id="large-contact-phone-card"
                   >
                     <div className="p-4 rounded-xl bg-forest-900 text-lime-accent group-hover:scale-110 transition-transform duration-300 shrink-0">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-forest-600 block mb-0.5">
-                        Línea Telefónica y WhatsApp
+                      <span className="text-xs uppercase font-extrabold tracking-widest text-forest-700 block mb-1">
+                        PHONE LINE & WHATSAPP
                       </span>
-                      <span className="font-display text-lg sm:text-xl font-bold text-stone-900 group-hover:text-forest-900 transition-colors">
-                        +52 55 8421 9900
+                      <span className="font-display text-xl sm:text-2xl font-black text-stone-950 group-hover:text-forest-950 transition-colors">
+                        +506 8313-2961
                       </span>
-                      <span className="text-xs text-stone-500 font-light block mt-0.5">
-                        Resolución de dudas y asesoría de jugoterapia exprés.
+                      <span className="text-sm text-stone-800 font-semibold block mt-1">
+                        ASK QUESTIONS OR PLACE ORDERS
                       </span>
                     </div>
                   </a>
@@ -648,21 +649,21 @@ export default function App() {
                   {/* EMAIL CARD */}
                   <a 
                     href="mailto:hola@greenvibesjugos.com"
-                    className="group flex items-center gap-5 p-5 bg-stone-50 hover:bg-forest-50 border border-stone-200/60 hover:border-forest-200 rounded-2xl transition-all duration-300 shadow-xs"
+                    className="group flex items-center gap-6 p-6 bg-stone-50 hover:bg-forest-50 border border-stone-300 hover:border-forest-300 rounded-2xl transition-all duration-300 shadow-sm"
                     id="large-contact-email-card"
                   >
                     <div className="p-4 rounded-xl bg-forest-900 text-lime-accent group-hover:scale-110 transition-transform duration-300 shrink-0">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-forest-600 block mb-0.5">
-                        Correo de Bienestar
+                      <span className="text-xs uppercase font-extrabold tracking-widest text-forest-700 block mb-1">
+                        EMAIL
                       </span>
-                      <span className="font-display text-lg sm:text-xl font-bold text-stone-900 group-hover:text-forest-900 transition-colors break-all">
+                      <span className="font-display text-xl sm:text-2xl font-black text-stone-950 group-hover:text-forest-950 transition-colors break-all">
                         hola@greenvibesjugos.com
                       </span>
-                      <span className="text-xs text-stone-500 font-light block mt-0.5">
-                        Atención corporativa, colaboraciones y eventos especiales.
+                      <span className="text-sm text-stone-800 font-semibold block mt-1">
+                        Corporate Services, Partnerships, and Special Events.
                       </span>
                     </div>
                   </a>
@@ -671,8 +672,8 @@ export default function App() {
 
                 {/* SOCIAL MEDIA SECTION */}
                 <div className="pt-2">
-                  <h4 className="text-[10px] uppercase font-bold tracking-widest text-stone-400 mb-4">
-                    Comunidad y Redes Sociales
+                  <h4 className="text-xs uppercase font-extrabold tracking-widest text-stone-500 mb-4">
+                    Community and Social Media
                   </h4>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -682,18 +683,18 @@ export default function App() {
                       href="https://instagram.com" 
                       target="_blank" 
                       rel="noreferrer"
-                      className="flex items-center gap-3.5 p-4 bg-stone-50 hover:bg-lime-accent/15 border border-stone-150 hover:border-lime-accent/50 rounded-xl transition-all duration-300 group"
+                      className="flex items-center gap-3.5 p-5 bg-stone-50 hover:bg-lime-accent/15 border border-stone-150 hover:border-lime-accent/50 rounded-xl transition-all duration-300 group"
                       id="large-contact-instagram"
                     >
                       <div className="p-2 sm:p-2.5 bg-forest-900 text-lime-accent rounded-xl group-hover:scale-105 transition-transform">
                         <Instagram className="h-5 w-5" />
                       </div>
                       <div>
-                        <span className="text-xs font-bold text-stone-900 block group-hover:text-forest-900 transition-colors">
+                        <span className="text-sm font-extrabold text-stone-950 block group-hover:text-forest-950 transition-colors">
                           @greenvibes.cr
                         </span>
-                        <span className="text-[10px] text-stone-500 font-light">
-                          Instagram oficial
+                        <span className="text-xs text-stone-700 font-semibold">
+                          Official Instagram
                         </span>
                       </div>
                     </a>
@@ -703,18 +704,18 @@ export default function App() {
                       href="https://facebook.com" 
                       target="_blank" 
                       rel="noreferrer"
-                      className="flex items-center gap-3.5 p-4 bg-stone-50 hover:bg-lime-accent/15 border border-stone-150 hover:border-lime-accent/50 rounded-xl transition-all duration-300 group"
+                      className="flex items-center gap-3.5 p-5 bg-stone-50 hover:bg-lime-accent/15 border border-stone-150 hover:border-lime-accent/50 rounded-xl transition-all duration-300 group"
                       id="large-contact-facebook"
                     >
-                      <div className="p-2 sm:p-2.5 bg-forest-900 text-lime-accent rounded-xl group-hover:scale-105 transition-transform">
+                      <div className="p-2.5 sm:p-2.5 bg-forest-900 text-lime-accent rounded-xl group-hover:scale-105 transition-transform">
                         <Facebook className="h-5 w-5" />
                       </div>
                       <div>
-                        <span className="text-xs font-bold text-stone-900 block group-hover:text-forest-900 transition-colors">
+                        <span className="text-sm font-extrabold text-stone-950 block group-hover:text-forest-950 transition-colors">
                           Green Vibes Costa Rica
                         </span>
-                        <span className="text-[10px] text-stone-500 font-light">
-                          Comunidad en Facebook
+                        <span className="text-xs text-stone-700 font-semibold">
+                          Facebook Community
                         </span>
                       </div>
                     </a>
@@ -725,9 +726,9 @@ export default function App() {
               </div>
 
               {/* Footnote assurance */}
-              <div className="mt-8 pt-5 border-t border-stone-100 flex items-center gap-3 text-[11px] text-stone-500 font-light">
-                <Check className="h-4 w-4 text-forest-600 shrink-0" />
-                <span>Atención humana al instante. Sin bots, resolvemos tus dudas directo desde nuestro taller.</span>
+              <div className="mt-8 pt-5 border-t border-stone-200 flex items-center gap-3 text-xs text-stone-700 font-semibold">
+                <Check className="h-5 w-5 text-forest-700 shrink-0 stroke-3" />
+                <span>Remember to follow us on social media to stay up to date on our progress!</span>
               </div>
 
             </div>
@@ -746,14 +747,14 @@ export default function App() {
               <Leaf className="h-4 w-4 fill-current" />
             </div>
             <span>
-              &copy; {new Date().getFullYear()} Green Vibes S.A. de C.V. Todos los derechos reservados.
+              &copy; {new Date().getFullYear()} Green Vibes S.A. of C.V. All rights reserved.
             </span>
           </div>
 
           <div className="flex items-center gap-6 font-light">
-            <span className="hover:text-stone-200 transition-colors cursor-pointer">Aviso de Privacidad</span>
-            <span className="hover:text-stone-200 transition-colors cursor-pointer">Términos de Servicio</span>
-            <span className="hover:text-stone-200 transition-colors cursor-pointer">Jugoterapia Segura</span>
+            <span className="hover:text-stone-200 transition-colors cursor-pointer">Privacy Notice</span>
+            <span className="hover:text-stone-200 transition-colors cursor-pointer">Terms of Service</span>
+            <span className="hover:text-stone-200 transition-colors cursor-pointer">Copyright</span>
           </div>
         </div>
       </footer>
@@ -773,22 +774,17 @@ export default function App() {
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
               transition={{ type: 'spring', damping: 25, stiffness: 350 }}
-              className="bg-stone-50 rounded-3xl overflow-hidden max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-stone-200 flex flex-col md:flex-row"
+              className="bg-stone-50 rounded-3xl overflow-hidden max-w-3xl w-full max-h-[90vh] shadow-2xl border border-stone-200 flex flex-col md:flex-row md:items-stretch"
               onClick={(e) => e.stopPropagation()} // stop auto close
             >
               {/* Product graphic side */}
-              <div className="relative md:w-5/12 bg-stone-200 min-h-62.5 md:min-h-auto shrink-0">
+              <div className="relative md:w-5/12 bg-[#eeb805] min-h-75 md:min-h-full md:h-auto shrink-0 overflow-hidden">
                 <img 
                   src={selectedProduct.expandedImage} // <-- Carga la imagen dedicada detallada
                   alt={selectedProduct.name} 
-                  className="w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                 />
-                
-                {/* Absolute tag */}
-                <div className="absolute top-4 left-4 bg-forest-950/80 text-stone-50 font-mono text-[9px] uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-sm">
-                  100% Crudo y Vivo
-                </div>
-
+              
                 {/* Close Button top-right absolute inside photo on mobile, inside header on desktop */}
                 <button 
                   onClick={() => setSelectedProduct(null)}
@@ -800,7 +796,7 @@ export default function App() {
               </div>
 
               {/* Product detail content side */}
-              <div className="p-6 sm:p-8 md:w-7/12 flex flex-col justify-between relative bg-white">
+              <div className="p-6 sm:p-8 md:w-7/12 flex flex-col justify-between relative bg-white md:max-h-[90vh] md:overflow-y-auto">
                 
                 {/* Desktop Close Button inside layout */}
                 <button 
@@ -812,35 +808,35 @@ export default function App() {
                 </button>
 
                 <div>
-                  <span className="text-[10px] font-bold text-forest-600 tracking-widest uppercase block mb-1">
-                    Ficha Técnica Botánica
+                  <span className="text-xs font-extrabold text-forest-700 tracking-widest uppercase block mb-1.5">
+                    Technical Details
                   </span>
                   
-                  <h3 className="font-display text-2xl md:text-3xl font-bold text-forest-900 mb-2">
+                  <h3 className="font-display text-3xl md:text-4xl font-black text-forest-950 mb-2">
                     {selectedProduct.name}
                   </h3>
                   
-                  <p className="text-stone-500 text-xs italic mb-4">
+                  <p className="text-stone-850 text-sm sm:text-base font-bold italic mb-4">
                     "{selectedProduct.tagline}"
                   </p>
 
-                  <div className="h-px bg-stone-150 my-4" />
+                  <div className="h-0.5 bg-stone-200 my-4" />
 
                   {/* Long description text */}
-                  <p className="text-stone-600 text-xs sm:text-sm font-light leading-relaxed mb-5">
+                  <p className="text-stone-800 text-sm sm:text-base font-semibold leading-relaxed mb-6">
                     {selectedProduct.longDescription}
                   </p>
 
                   {/* Active Ingredients list */}
-                  <div className="mb-5">
-                    <span className="block text-xs font-semibold text-stone-800 uppercase tracking-wider mb-2">
-                      Ingredientes Activos:
+                  <div className="mb-6">
+                    <span className="block text-sm font-extrabold text-stone-900 uppercase tracking-wider mb-2.5">
+                      Ingredients:
                     </span>
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex flex-wrap gap-2">
                       {selectedProduct.ingredients.map((ingredient, idx) => (
                         <span 
                           key={idx} 
-                          className="bg-stone-100 text-stone-700 text-[11px] px-2.5 py-1 rounded-full font-medium"
+                          className="bg-stone-100 text-stone-900 text-xs px-3.5 py-1.5 rounded-full font-extrabold border border-stone-200"
                         >
                           {ingredient}
                         </span>
@@ -849,14 +845,14 @@ export default function App() {
                   </div>
 
                   {/* Active Benefits list */}
-                  <div className="mb-5 bg-stone-50/50 p-4 rounded-xl border border-stone-200/50">
-                    <span className="block text-xs font-semibold text-stone-800 uppercase tracking-wider mb-2">
-                      Beneficios Clave:
+                  <div className="mb-6 bg-stone-50/80 p-5 rounded-2xl border-2 border-stone-200">
+                    <span className="block text-sm font-extrabold text-stone-900 uppercase tracking-wider mb-2.5">
+                      Key Benefits:
                     </span>
-                    <ul className="space-y-1.5 text-xs text-stone-600 font-light">
+                    <ul className="space-y-2 text-sm text-stone-850 font-semibold">
                       {selectedProduct.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-center gap-2">
-                          <Check className="h-3.5 w-3.5 text-forest-500 fill-white" />
+                        <li key={idx} className="flex items-center gap-2.5">
+                          <Check className="h-4.5 w-4.5 text-forest-700 fill-white stroke-[3.5]" />
                           <span>{benefit}</span>
                         </li>
                       ))}
@@ -865,25 +861,25 @@ export default function App() {
 
                   {/* Nutritional Facts card */}
                   <div>
-                    <span className="block text-xs font-semibold text-stone-800 uppercase tracking-wider mb-2">
-                      Información Nutricional (350ml):
+                    <span className="block text-sm font-extrabold text-stone-900 uppercase tracking-wider mb-2.5">
+                      Nutritional Information (100ml):
                     </span>
-                    <div className="grid grid-cols-2 gap-3 text-xs">
-                      <div className="p-2 border border-stone-100 rounded-lg bg-stone-50/20">
-                        <span className="text-stone-400 text-[10px] uppercase font-medium">Contenido Energético</span>
-                        <p className="font-bold text-forest-900 mt-0.5">{selectedProduct.nutritionalFacts.calories} kcal</p>
+                    <div className="grid grid-cols-2 gap-3.5 text-xs sm:text-sm">
+                      <div className="p-3 border-2 border-stone-200 rounded-xl bg-stone-50/30">
+                        <span className="text-stone-500 text-xs uppercase font-extrabold">Energy content</span>
+                        <p className="font-black text-forest-950 text-base sm:text-lg mt-0.5">{selectedProduct.nutritionalFacts.calories} kcal</p>
                       </div>
-                      <div className="p-2 border border-stone-100 rounded-lg bg-stone-50/20">
-                        <span className="text-stone-400 text-[10px] uppercase font-medium">Azúcares de Fruta</span>
-                        <p className="font-bold text-forest-900 mt-0.5">{selectedProduct.nutritionalFacts.sugar}</p>
+                      <div className="p-3 border-2 border-stone-200 rounded-xl bg-stone-50/30">
+                        <span className="text-stone-500 text-xs uppercase font-extrabold">Fruit Sugars</span>
+                        <p className="font-black text-forest-950 text-base sm:text-lg mt-0.5">{selectedProduct.nutritionalFacts.sugar}</p>
                       </div>
-                      <div className="p-2 border border-stone-100 rounded-lg bg-stone-50/20">
-                        <span className="text-stone-400 text-[10px] uppercase font-medium">Proteína Vegetal</span>
-                        <p className="font-bold text-forest-900 mt-0.5">{selectedProduct.nutritionalFacts.protein}</p>
+                      <div className="p-3 border-2 border-stone-200 rounded-xl bg-stone-50/30">
+                        <span className="text-stone-500 text-xs uppercase font-extrabold">Protein</span>
+                        <p className="font-black text-forest-950 text-base sm:text-lg mt-0.5">{selectedProduct.nutritionalFacts.protein}</p>
                       </div>
-                      <div className="p-2 border border-stone-100 rounded-lg bg-stone-50/20">
-                        <span className="text-stone-400 text-[10px] uppercase font-medium">Altas Concentraciones</span>
-                        <p className="font-bold text-forest-950 mt-0.5 text-[10px] line-clamp-1">
+                      <div className="p-3 border-2 border-stone-200 rounded-xl bg-stone-50/30">
+                        <span className="text-stone-500 text-xs uppercase font-extrabold">Vitamins</span>
+                        <p className="font-black text-forest-950 text-xs sm:text-sm mt-0.5 line-clamp-1">
                           {selectedProduct.nutritionalFacts.vitamins.slice(0, 2).join(', ')}
                         </p>
                       </div>
@@ -894,14 +890,12 @@ export default function App() {
 
                 {/* Footer warning standard for safety */}
                 <div className="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
-                  <span className="flex items-center gap-1.5 text-[10px] text-stone-400 leading-tight">
-                    <AlertCircle className="h-3.5 w-3.5 text-stone-300" /> Consultar antes con especialista si padece diabetes severa.
-                  </span>
+                  
                   <button 
                     onClick={() => setSelectedProduct(null)}
                     className="cursor-pointer bg-forest-900 hover:bg-forest-800 text-stone-50 text-xs font-semibold py-2 px-4 rounded-xl shadow-md transition-colors"
                   >
-                    Cerrar Detalle
+                    Close Details
                   </button>
                 </div>
 
