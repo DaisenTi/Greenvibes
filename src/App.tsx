@@ -786,7 +786,7 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
               transition={{ type: 'spring', damping: 25, stiffness: 350 }}
-              className="bg-stone-50 rounded-3xl overflow-hidden max-w-3xl w-full max-h-[90vh] shadow-2xl border border-stone-200 flex flex-col md:flex-row md:items-stretch"
+              className="bg-stone-50 rounded-3xl overflow-y-auto max-w-3xl w-full max-h-[90vh] shadow-2xl border border-stone-200 flex flex-col md:flex-row md:items-stretch"
               onClick={(e) => e.stopPropagation()} // stop auto close
             >
               {/* Product graphic side */}
