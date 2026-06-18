@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset (Imagen de inicio)
 import heroBg from './assets/images/inicio_ingles.jpeg';
 // @ts-expect-error - image asset (Imagen de inicio VERSION CELULAR)
-import heroBgMobile from './assets/images/inicio_ingles-celular.jpeg';
+import heroBgMobile from './assets/images/vertical 750.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
