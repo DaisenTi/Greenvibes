@@ -12,7 +12,7 @@ import heroBgMobile from './assets/images/vertical sin data B.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
-import inicioproductosBg from './assets/images/1600x700_B.jpeg';
+import inicioproductosBg from './assets/images/our_juices_1600x700.jpeg';
 // @ts-expect-error - image asset (Imagen producto mango)
 import mangoproductoBg from './assets/images/modelo mango.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen producto mora)
