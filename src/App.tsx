@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset (Imagen de inicio)
 import heroBg from './assets/images/inicio_ingles.jpeg';
 // @ts-expect-error - image asset (Imagen de inicio VERSION CELULAR)
-import heroBgMobile from './assets/images/vertical 750.jpg.jpeg';
+import heroBgMobile from './assets/images/vertical sin data.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
@@ -405,13 +405,13 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
           </div>
 
           {/* BANNER DESTACADO (INTRODUCCIÓN VISUAL DE GAMA) */}
-          <div className="mb-16 relative rounded-3xl overflow-hidden shadow-xl border border-forest-100 h-64 sm:h-87.5 md:h-112.5 bg-stone-100 group">
+          <div className="mb-16 relative rounded-3xl overflow-hidden shadow-xl border border-forest-100 h-auto md:h-112.5 bg-stone-100 group">
             {/* Visual background image of product line - clean and fully bright */}
-            <div className="absolute inset-0">
+            <div className="relative md:absolute md:inset-0 w-full h-full">
               <img 
                 src={inicioproductosBg} 
                 alt="Retrato artístico de la gama botánica Green Vibes sobre base neutra y elegante" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-101"
+                className="w-full h-auto md:h-full md:object-cover transition-transform duration-700 group-hover:scale-101"
               />
             </div>
           </div>
