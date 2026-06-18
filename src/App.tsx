@@ -7,6 +7,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset (Imagen de inicio)
 import heroBg from './assets/images/inicio_ingles.jpeg';
+// @ts-expect-error - image asset (Imagen de inicio VERSION CELULAR)
+import heroBgMobile from './assets/images/inicio_ingles-celular.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
@@ -258,10 +260,20 @@ export default function App() {
       >
         {/* Background Image - Bright, clean and natural with no dark filter overlays */}
         <div className="absolute inset-0 z-0">
+
+          {/*Imagen de hero version celular*/}
+          <img 
+            src={heroBgMobile} 
+            alt="Ingredientes naturales y jugos Green Vibes - Versión Móvil" 
+            className="block md:hidden w-full h-full object-cover scale-100 object-center"
+            referrerPolicy="no-referrer"
+          />
+
+          {/*Imagen de hero VERSION COMPUTADOR*/}
           <img 
             src={heroBg} 
-            alt="Ingredientes naturales y jugos Green Vibes preparados artesanalmente en frío" 
-            className="w-full h-full object-cover scale-100"
+            alt="Ingredientes naturales y jugos Green Vibes preparados artesanalmente en frío - Versión Escritorio" 
+            className="hidden md:block w-full h-full object-cover scale-100 object-center"
             referrerPolicy="no-referrer"
           />
         </div>
