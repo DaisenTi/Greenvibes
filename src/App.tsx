@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 // @ts-expect-error - image asset (Imagen de inicio)
-import heroBg from './assets/images/inicio_ingles.jpeg';
+import heroBg from './assets/images/001.jpg';
 // @ts-expect-error - image asset (Imagen de inicio VERSION CELULAR)
 import heroBgMobile from './assets/images/vertical sin data B.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de quienes somos)
