@@ -494,11 +494,11 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
           
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-2xl uppercase font-extrabold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Our Commitment</span>
-            <h3 className="font-display text-3xl sm:text-4xl font-extrabold tracking-wide">
+            <span className="text-xl uppercase font-extrabold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Our Commitment</span>
+            <h3 className="font-display text-xl sm:text-3xl font-extrabold tracking-wide">
               Why choose Gréén Vibes?
             </h3>
-            <p className="text-stone-200 text-3xl sm:text-xl font-normal tracking-widest mt-4 leading-relaxed">
+            <p className="text-stone-200 text-2xl sm:text-lg font-normal tracking-widest mt-4 leading-relaxed">
               Every step of our process is optimized to ensure botanical purity, responsible nutrition, and zero harmful environmental waste.
             </p>
           </div>
