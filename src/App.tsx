@@ -400,7 +400,7 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
               Natural elixir bottled in high-quality glass
             </h2>
             <p className="text-stone-600 text-base sm:text-lg leading-relaxed font-light">
-              Our beverage line is formulated based on meticulous nutritional analysesOur beverage line is formulated based on meticulous nutritional analyses
+              Our beverage line is formulated based on meticulous nutritional analyses
             </p>
           </div>
 
