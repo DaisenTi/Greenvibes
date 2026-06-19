@@ -13,6 +13,8 @@ import heroBgMobile from './assets/images/vertical sin data B.jpg.jpeg';
 import quienessomosBg from './assets/images/quienes_somos_version_mejorada.jpg';
 // @ts-expect-error - image asset (Imagen de menu productos)
 import inicioproductosBg from './assets/images/our_juices_1600x700.jpeg';
+// @ts-expect-error - image asset (Imagen de menu productos VERSION CELULAR)
+import bannerproductosMBg from './assets/images/800x600 A.jpg.jpeg'
 // @ts-expect-error - image asset (Imagen producto mango)
 import mangoproductoBg from './assets/images/modelo mango.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen producto mora)
@@ -405,13 +407,22 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
           </div>
 
           {/* BANNER DESTACADO (INTRODUCCIÓN VISUAL DE GAMA) */}
-          <div className="mb-16 relative rounded-3xl overflow-hidden shadow-xl border border-forest-100 h-auto md:h-112.5 bg-stone-100 group">
+          <div className="mb-16 relative rounded-3xl overflow-hidden shadow-xl border border-forest-100 h-72 md:h-112.5 bg-stone-100 group">
             {/* Visual background image of product line - clean and fully bright */}
-            <div className="relative md:absolute md:inset-0 w-full h-full">
+            <div className="absolute inset-0">
+              {/*Imagen banner productos version MOBILE*/}
+              <img
+                src= {bannerproductosMBg}
+                alt="Botella green vibes banner mobile"
+                className="block md:hidden w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-101"
+                referrerPolicy="no-referrer"
+              />
+              {/*Vista de imagen banner productos VERSION PC*/}
               <img 
                 src={inicioproductosBg} 
-                alt="Retrato artístico de la gama botánica Green Vibes sobre base neutra y elegante" 
-                className="w-full h-auto md:h-full md:object-cover transition-transform duration-700 group-hover:scale-101"
+                alt="Botella green vibes banner desktop" 
+                className="hidden md:block w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-101"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
