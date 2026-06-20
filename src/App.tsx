@@ -752,7 +752,7 @@ Each formulation harnesses the natural bioactive compounds found in fruit to sup
 
                   {/* EMAIL CARD */}
                   <a 
-                    href="mailto:hola@greenvibesjugos.com"
+                    href="mailto:info@greenvibescr.com"
                     className="group flex items-center gap-6 p-6 bg-stone-50 hover:bg-forest-50 border border-stone-300 hover:border-forest-300 rounded-2xl transition-all duration-300 shadow-sm"
                     id="large-contact-email-card"
                   >
@@ -764,7 +764,7 @@ Each formulation harnesses the natural bioactive compounds found in fruit to sup
                         EMAIL
                       </span>
                       <span className="font-display text-xl sm:text-2xl font-black text-stone-950 group-hover:text-forest-950 transition-colors break-all">
-                        hola@greenvibesjugos.com
+                        info@greenvibescr.com
                       </span>
                       <span className="text-sm text-stone-800 font-semibold block mt-1">
                         Corporate Services, Partnerships, and Special Events.
