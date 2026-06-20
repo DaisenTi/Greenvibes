@@ -23,7 +23,6 @@ import moraproductoBg from './assets/images/modelo mora.jpg.jpeg';
 import casproductoBg from './assets/images/modelo cas.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen producto maracuya)
 import maracuyaproductoBg from './assets/images/modelo maracuya.jpg.jpeg';
-
 // @ts-expect-error - image asset (Imagen de mango expandida)
 import mangoexpandedBg from './assets/images/botella mango 800x600 D.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de mora expandida)
@@ -32,7 +31,6 @@ import moraexpandedBg from './assets/images/botella mora 800x600 B.jpg.jpeg';
 import casexpandedBg from './assets/images/botella cas 800x600 B.jpg.jpeg';
 // @ts-expect-error - image asset (Imagen de maracuya expandida)
 import maracuyaexpandedBg from './assets/images/botella maracuya 800x600 B.jpg.jpeg';
-
 // @ts-expect-error - image asset (Imagen Contactanos)
 import contactBg from './assets/images/contactanos 1000x1200.jpg.jpeg';
 import { 
@@ -53,7 +51,11 @@ import {
   ShieldCheck,
   ChevronRight,
   Send,
-  AlertCircle
+  AlertCircle,
+  Ban,
+  Recycle,
+  Atom,
+  Thermometer
 } from 'lucide-react';
 
 interface Product {
@@ -319,13 +321,16 @@ export default function App() {
             {/* LADO IZQUIERDO: TEXT CONTENT */}
             <div className="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-forest-900 mb-6 leading-tight">
-                Natural Hydration
+                Drink Better. <br /> 
+                Live Vibrantly
               </h2>
               
               <div className="space-y-6 text-stone-700 text-base sm:text-lg leading-relaxed font-light">
                 <p>
-                   <strong className="text-forest-900 font-semibold">Green Vibes</strong> transforms real tropical fruits into functional wellness beverages crafted for modern healthy living. Every bottle is made with natural ingredients, fortified with Vitamin C, packaged in recyclable glass, and designed to deliver clean, refreshing nutrition without artificial preservatives or unnecessary additives. More than just juice, Green Vibes is a daily wellness ritual — vibrant, functional, and naturally energizing.
-Our formulations are developed using real fruit, antioxidant-rich ingredients, and science-backed nutritional principles to support hydration, digestive wellness, immune health, and natural vitality. Packaged in glass to help minimize exposure to microplastics commonly associated with plastic beverage containers, Green Vibes offers a cleaner and more sustainable way to enjoy tropical nutrition.
+                   <strong className="text-forest-900 font-semibold">Green Vibes</strong> transforms real tropical fruits into functional beverages crafted for people seeking a healthier, more natural, and mindful way to nourish themselves every day. Made with natural ingredients, fortified with Vitamin C, and packaged in recyclable glass, our juices combine authentic flavor, science-backed nutrition, and sustainability in every bottle. 
+Each formulation harnesses the natural bioactive compounds found in fruit to support hydration, digestive wellness, immune health, and antioxidant protection—without artificial preservatives or flavors.
+ More than just a juice, Green Vibes is a modern alternative to ultra-processed beverages: a refreshing, tropical, and naturally functional experience that promotes personal well-being while caring for the planet.
+
                 </p>
                 <p>
                   Bright, tropical, refreshing, and naturally vibrant flavors inspired by Costa Rica's biodiversity.
@@ -372,13 +377,66 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
                     className="w-full h-100 sm:h-120 object-cover rounded-xl transition-all duration-700 group-hover:scale-102"
                   />
                   
-                  {/* Decorative badge with company core metric */}
-                  <div className="absolute bottom-8 left-8 right-8 bg-forest-950/95 backdrop-blur-md rounded-2xl p-6 text-stone-50 shadow-xl border border-forest-800/80">
-                    <span className="font-display block text-3xl font-extrabold text-lime-accent">100% Zero</span>
-                    <span className="text-xs uppercase tracking-widest text-stone-300 block font-bold mt-1">No chemicals</span>
-                    <p className="text-xs text-stone-400 mt-2 leading-relaxed">
-                      I don't know what to put here.
-                    </p>
+                  {/* Decorative badge with company core metric - Matching uploaded design card */}
+                  <div className="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6 bg-forest-950/95 backdrop-blur-md rounded-2xl p-3 md:p-4 text-stone-50 shadow-2xl border border-white/10" id="brand-commitment-badge">
+                    {/* Slogan Header Block */}
+                    <div className="mb-2.5">
+                      <h3 className="text-base sm:text-lg md:text-xl font-black text-white tracking-tight leading-tight">
+                        Real fruit. Real benefits. 
+                        <span className="text-lime-400"> Real vibes.</span>
+                      </h3>
+                    </div>
+
+                    {/* Bullet Grid */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 border-t border-white/10 pt-2.5 pb-1">
+                      {/* item 1: 100% Natural */}
+                      <div className="flex items-center gap-1.5 md:gap-2">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-lime-400 bg-white/5">
+                          <Leaf className="h-3 w-3" />
+                        </div>
+                        <span className="text-[10px] sm:text-[11px] md:text-xs font-bold text-stone-100 leading-tight">
+                          100% Natural
+                        </span>
+                      </div>
+
+                      {/* item 2: Immune Support */}
+                      <div className="flex items-center gap-1.5 md:gap-2">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-lime-400 bg-white/5">
+                          <ShieldCheck className="h-3 w-3" />
+                        </div>
+                        <span className="text-[10px] sm:text-[11px] md:text-xs font-bold text-stone-100 leading-tight">
+                          Immune Support
+                        </span>
+                      </div>
+
+                      {/* item 3: Hydrating & Refreshing */}
+                      <div className="flex items-center gap-1.5 md:gap-2">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-lime-400 bg-white/5">
+                          <Droplet className="h-3 w-3" />
+                        </div>
+                        <span className="text-[10px] sm:text-[11px] md:text-xs font-bold text-stone-100 leading-tight">
+                          Hydrating &<br className="hidden md:block" /> Refreshing
+                        </span>
+                      </div>
+
+                      {/* item 4: No Preservatives / No Artificial Anything */}
+                      <div className="flex items-center gap-1.5 md:gap-2">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-lime-400 bg-white/5">
+                          <Ban className="h-3 w-3" />
+                        </div>
+                        <div className="flex flex-col text-[10px] sm:text-[11px] md:text-xs font-bold text-stone-100 leading-tight">
+                          <span>No Preservatives</span>
+                          <span className="text-[8px] sm:text-[9px] opacity-75 font-semibold">No Artificial Anything</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bottom centered text */}
+                    <div className="text-center pt-2 border-t border-white/10 mt-1.5">
+                      <span className="text-[8px] sm:text-[9px] font-extrabold text-lime-400 uppercase tracking-widest block">
+                        Tropical nutrition for your everyday.
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -397,12 +455,14 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
           
           {/* Header Introduction Block */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs uppercase font-bold tracking-widest text-forest-600 mb-3.5 block border-l-4 border-lime-accent pl-3.5 w-fit mx-auto">Premium Cold Press</span>
+            <span className="text-xs uppercase font-bold tracking-widest text-forest-600 mb-3.5 block border-l-4 border-lime-accent pl-3.5 w-fit mx-auto">Premium Juice</span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-forest-900 mb-6">
-              Natural elixir bottled in high-quality glass
+              Inspired by Tradition, Designed for the Future
             </h2>
             <p className="text-stone-600 text-base sm:text-lg leading-relaxed font-light">
-              Our beverage line is formulated based on meticulous nutritional analyses
+              Before refrigeration existed, food preservation relied on knowledge, craftsmanship, and natural processes.
+               Green vibes embraces this philosophy by creating shelf-stable functional beverages that do not require refrigeration, reducing dependence on cold-chain 
+               logistics while maintaining quality and nutritional value. By combining traditional preservation principles with modern food science, we offer a more sustainable way to enjoy tropical wellness.
             </p>
           </div>
 
@@ -505,76 +565,97 @@ Our formulations are developed using real fruit, antioxidant-rich ingredients, a
           
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xl uppercase font-extrabold tracking-widest text-lime-accent block mb-3 border-b border-white/10 pb-2 w-fit mx-auto">Our Commitment</span>
-            <h3 className="font-display text-xl sm:text-3xl font-extrabold tracking-wide">
-              Why choose Gréén Vibes?
+            <span className="text-xs uppercase font-extrabold tracking-[0.2em] text-lime-500 block mb-3 w-fit mx-auto">OUR COMMITMENT</span>
+            <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
+              Why choose Green Vibes?
             </h3>
-            <p className="text-stone-200 text-2xl sm:text-lg font-normal tracking-widest mt-4 leading-relaxed">
+            <p className="text-stone-300 text-sm sm:text-base font-medium mt-3 leading-relaxed max-w-3xl mx-auto">
               Every step of our process is optimized to ensure botanical purity, responsible nutrition, and zero harmful environmental waste.
             </p>
           </div>
 
-          {/* FILA HORIZONTAL DE 4 RECUADROS CONSECUTIVOS */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* FILA HORIZONTAL DE 6 RECUADROS CONSECUTIVOS */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
             
-            {/* Pilar 1: 100% Orgánico */}
-            <div className="bg-forest-950/40 border border-forest-800/60 rounded-3xl p-8 hover:bg-forest-950/60 transition-all duration-300 flex flex-col justify-between align-start group">
-              <div>
-                <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-2xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
-                  <Leaf className="h-6 w-6" />
-                </div>
-                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  100% Bio
-                </h4>
-                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  All of our ingredients come from certified organic farms that respect biodiversity and avoid the use of harmful synthetic pesticides.
-                </p>
+            {/* Pilar 1: Botanical Purity */}
+            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group">
+              <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform">
+                <Leaf className="h-5 w-5" />
               </div>
+              <h4 className="font-display text-sm sm:text-base font-bold text-stone-50 mb-2 leading-tight">
+                Botanical<br />Purity
+              </h4>
+              <p className="text-stone-300 text-[11px] sm:text-xs font-medium leading-relaxed">
+                All our ingredients come from Central American farms that respect biodiversity. We also support local farms' production and distribution. We believe that each bottle will sustain a social network with a socioeconomic approach.
+              </p>
             </div>
 
-            {/* Pilar 2: Sin Azúcar Añadida */}
-            <div className="bg-forest-950/40 border border-forest-800/60 rounded-3xl p-8 hover:bg-forest-950/60 transition-all duration-300 flex flex-col justify-between align-start group">
-              <div>
-                <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-2xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
-                  <Sparkles className="h-6 w-6" />
-                </div>
-                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  No added sugar
-                </h4>
-                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  We do not add artificial sweeteners or high-fructose corn syrup. The sweetness is subtle and comes 100% from natural, ripe fresh fruit.
-                </p>
+            {/* Pilar 2: Rich in Natural Antioxidants & Fiber */}
+            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group">
+              <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform">
+                <Atom className="h-5 w-5" />
               </div>
+              <h4 className="font-display text-sm sm:text-base font-bold text-stone-50 mb-2 leading-tight">
+                Rich in Natural<br />Antioxidants<br />& Fiber
+              </h4>
+              <p className="text-stone-300 text-[11px] sm:text-xs font-medium leading-relaxed">
+                Our fruits are naturally rich in antioxidants, especially the Costa Rican guava Cas (Psidium friedrichsthalianum). Also, all our juices are rich in polyphenols, and vitamin C, and dietary fiber. These bioactive compounds are associated with cellular protection, gut health, immune support, and metabolic well-being. 
+              </p>
             </div>
 
-            {/* Pilar 3: Envases Sustentables */}
-            <div className="bg-forest-950/40 border border-forest-800/60 rounded-3xl p-8 hover:bg-forest-950/60 transition-all duration-300 flex flex-col justify-between align-start group">
-              <div>
-                <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
-                  <Droplet className="h-6 w-6" />
-                </div>
-                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  Sustainable Packaging
-                </h4>
-                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  Premium glass bottles that block direct UV light and eco-friendly, biodegradable caps. We promote the return and reuse of containers.
-                </p>
+            {/* Pilar 3: Glass That Makes a Difference */}
+            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group">
+              <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform">
+                <Recycle className="h-5 w-5" />
               </div>
+              <h4 className="font-display text-sm sm:text-base font-bold text-stone-50 mb-2 leading-tight">
+                Glass That<br />Makes a<br />Difference
+              </h4>
+              <p className="text-stone-300 text-[11px] sm:text-xs font-medium leading-relaxed">
+                Our glass bottles are 100% recyclable and reusable. They are free from microplastics and help reduce the impact of single-use plastic on our planet.
+              </p>
             </div>
 
-            {/* Pilar 4: Prensado en Frío */}
-            <div className="bg-forest-950/40 border border-forest-800/60 rounded-3xl p-8 hover:bg-forest-950/60 transition-all duration-300 flex flex-col justify-between align-start group">
-              <div>
-                <div className="w-14 h-14 bg-lime-accent/10 border border-lime-accent/20 rounded-xl flex items-center justify-center text-lime-accent mb-6 shadow-md group-hover:scale-105 transition-transform">
-                  <GlassWater className="h-6 w-6" />
-                </div>
-                <h4 className="font-display text-xl font-extrabold tracking-widest text-stone-50 mb-3">
-                  I don't know what to put here
-                </h4>
-                <p className="text-stone-200 text-xl sm:text-base font-normal tracking-widest leading-relaxed">
-                  i'm out of ideas
-                </p>
+            {/* Pilar 4: Real Nutrition, Real Benefits */}
+            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group">
+              <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform">
+                <Droplet className="h-5 w-5" />
               </div>
+              <h4 className="font-display text-sm sm:text-base font-bold text-stone-50 mb-2 leading-tight">
+                Real Nutrition,<br />Real Benefits
+              </h4>
+              <p className="text-stone-300 text-[11px] sm:text-xs font-medium leading-relaxed">
+                Each bottle is crafted to support hydration, digestive health, and natural vitality—bringing you functional nutrition you can feel and trust.
+              </p>
+            </div>
+
+            {/* Pilar 5: Made for You, Made Responsibly */}
+            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group">
+              <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform">
+                <Heart className="h-5 w-5" />
+              </div>
+              <h4 className="font-display text-sm sm:text-base font-bold text-stone-50 mb-2 leading-tight">
+                Made for You,<br />Made<br />Responsibly
+              </h4>
+              <p className="text-stone-300 text-[11px] sm:text-xs font-medium leading-relaxed">
+                We craft clean, honest beverages with transparency and care, so you can enjoy what's good for you while we take care of what's good for the planet.
+              </p>
+            </div>
+
+            {/* Pilar 6: No Cold Chain Required */}
+            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group relative overflow-hidden">
+              <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform relative">
+                <Thermometer className="h-5 w-5" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-6 h-0.5 bg-lime-400 rotate-45 rounded-full" />
+                </div>
+              </div>
+              <h4 className="font-display text-sm sm:text-base font-bold text-stone-50 mb-2 leading-tight">
+                No Cold Chain<br />Required
+              </h4>
+              <p className="text-stone-300 text-[11px] sm:text-xs font-medium leading-relaxed z-10">
+                Our shelf-stable formulation eliminates the need for refrigeration during storage and transportation. By reducing reliance on cold-chain logistics, Green Vibes lowers energy consumption while making functional nutrition more accessible, sustainable, and convenient.
+              </p>
             </div>
 
           </div>
