@@ -643,7 +643,7 @@ Each formulation harnesses the natural bioactive compounds found in fruit to sup
             </div>
 
             {/* Pilar 6: No Cold Chain Required */}
-            <div className="bg-gradient-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group relative overflow-hidden">
+            <div className="bg-linear-to-b from-forest-800/40 to-forest-900/40 border border-forest-700/50 rounded-2xl p-4 sm:p-5 hover:bg-forest-800/60 transition-all duration-300 flex flex-col align-start group relative overflow-hidden">
               <div className="w-10 h-10 bg-lime-500/10 border border-lime-500/20 rounded-xl flex items-center justify-center text-lime-400 mb-4 shadow-sm group-hover:scale-105 transition-transform relative">
                 <Thermometer className="h-5 w-5" />
                 <div className="absolute inset-0 flex items-center justify-center">
