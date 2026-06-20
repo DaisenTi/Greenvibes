@@ -730,7 +730,7 @@ Each formulation harnesses the natural bioactive compounds found in fruit to sup
                   
                   {/* PHONE CARD */}
                   <a 
-                    href="tel:+525584219900"
+                    href="tel:+50683132961"
                     className="group flex items-center gap-6 p-6 bg-stone-50 hover:bg-forest-50 border border-stone-300 hover:border-forest-300 rounded-2xl transition-all duration-300 shadow-sm"
                     id="large-contact-phone-card"
                   >
